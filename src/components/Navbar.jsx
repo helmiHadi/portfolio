@@ -40,10 +40,11 @@ const Navbar = () => {
             ))}
           </ul>
 
-          {/* CTA Button (Desktop) */}
+          {/* CTA Button (Desktop) - UPDATED FOR PDF DOWNLOAD */}
           <div className="hidden md:block">
             <a 
-              href="#cv" 
+              href="/Helmi_CV.pdf" 
+              download="Helmi_Hadi_Wibowo_CV.pdf"
               className="px-6 py-2.5 rounded-full border-2 border-black text-sm font-bold text-black hover:bg-black hover:text-white transition-all duration-300 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-y-1"
             >
               Download CV
@@ -100,8 +101,10 @@ const Navbar = () => {
                 </li>
               ))}
             </ul>
+            {/* CTA Button (Mobile) - UPDATED FOR PDF DOWNLOAD */}
             <a 
-              href="#cv" 
+              href="/Helmi_CV.pdf" 
+              download="Helmi_Hadi_Wibowo_CV.pdf"
               className="px-6 py-2.5 rounded-full border-2 border-black text-black hover:bg-black hover:text-white transition-all duration-300 mt-4 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-y-1"
               onClick={() => setIsOpen(false)}
             >
